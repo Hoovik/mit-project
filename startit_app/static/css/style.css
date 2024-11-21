@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+
+}
+:root {
+    --light: #507687;
+    --twice: #384B70;
+    --red: #B8001F;
+    --white: #FCFAEE;
+    --ow: #D9D9D9;
+    --rgv1099: rgb(10, 9, 9);
+    --list: #fff;
+    --bord: #8AC6E2;
+    --borde: #45503B;
+    --border: #C98D8D;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.title {
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(10, 9, 9);
+}
+
+.header {
+    background-color: var(--red);
+    padding: 16px 0;
+}
+
+.menu-btn {
+    background-color: #B8001F;
+    cursor: pointer;
+    border: 1px solid var(--red);
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu-list {
+    position: relative;
+    padding: 14px 0;
+    background-color: var(--borde);
+    display: none;
+}
+main {
+    background-color: var(--list);
+    min-height: 100vh;
+}
+
+.menu-list .menu-list__item {
+    list-style: none;
+}
+
+.menu-list__item {
+    margin-bottom: 6px;
+}
+.menu-link__list {
+    color: #FCFAEE;
+    text-decoration: none;   
+}
+.menu-link__list img {
+    position: relative;
+    top: 2px;
+    margin-left: -3px;
+    margin-right: 10px;
+}
+.category-list, .jobs-list {
+    margin: 20px 0;
+    margin-right: 12px;
+    padding: 2.5px;
+}
+.categories, .jobs, .job-detail, .auth {
+    padding: 24px 0;
+}
+.category-item {
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--rgv1099);
+    background-color: var(--ow);
+    border-radius: 25px;
+    padding: 8px;
+    transition: 0.3s ease-in-out;
+}
+.category-item:hover {
+    background-color: #a39f9f;
+}
+
+.job-card {
+    background-color: var(--bord);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.jobs {
+    background-color: var(--list);
+    padding: 24px 0;
+}
+.job-card__title, .job_card__company {
+    color: var(--rgv1099);
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.job-card__title {
+    font-weight: 400;
+}
+
+.job_card__company {
+    font-size: 18px;
+}
+.btn-button, .button-border {
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 0;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    padding: 4px 15px;
+    color: var(--rgv1099);
+    transition: 0.3s ease-in-out;
+}
+.btn-button:hover {
+    background-color: #a39f9f;
+}
+.button-border{
+    background-color: var(--border);
+    color: #ffffff;
+    font-weight: 200;
+    padding: 5px 25px;
+    margin: 18px 0;
+}
+.job-detail, .title {
+    margin-bottom: 5px;
+}
+
+.job-detail__data {
+    color: var(--rgv1099);
+    margin-bottom: 5px;
+}
+.job-detail__data span {
+    font-weight: 400;
+    font-size: 16px;
+}
+.job-detail__content {
+    font-size: 14px;
+    color: var(--rgv1099);
+    margin-bottom: 16px;
+}
+.job-detail__skills {
+    padding: 12px;
+    background-color: var(--bord);
+    color: var(--rgv1099);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.job-detail__title {
+    margin-bottom: 10px;
+
+}
+.job-detail__skills p, .job-detail__address {
+    font-size: 14px;
+}
+.job-detail__skills li {
+    list-style: none;
+}
+.help {
+    font-size: 14px;
+    text-align: center;
+    color: var(--rgv1099);
+}
+.help-link {
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--red);
+}
+
+.auth form {
+    margin: 20px 0;
+}
+
+.auth label {
+    display: block;
+    color: var(--rgv1099);
+    font-weight: 6oo;
+    margin-bottom: 8px;
+}
+
+.auth input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: var(--border);
+    border-radius: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.helptext {
+    display: none;
+}
